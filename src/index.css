@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --mcolor: #e3ff04;
+  /* --mcolor: #FE354C; */
+  /* --scolor: #330D5D; */
+  --scolor: rgb(255, 112, 4);
+}
+/* .example {
+  font-family: "acumin-variable",sans-serif;
+  font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+} */
+.example {
+  font-family: "acumin-variable",sans-serif;
+  font-variation-settings: 'wght' 598, 'wdth' 115, 'slnt' 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "acumin-variable", sans-serif;
+}
+html {
+  font-family: "acumin-variable", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+h1.en,
+h2.en,
+h3.en,
+h4.en,
+h5.en,
+h6.en {
+  font-family: "Alexandria", serif;
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+p.en,
+a.en,
+span.en {
+  font-family: "Tajawal", serif;
+  font-weight: 500 !important;
+}

@@ -1,0 +1,84 @@
+.about-header {
+  padding: 200px 0 100px;
+  background-image: url("../../Imges/contactheader.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about-header .cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-header .cont.en {
+  direction: rtl;
+}
+.about-header .cont h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.about-header .cont .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 100px;
+  /* gap: 7px; */
+}
+.about-header .cont .link h6 {
+  margin: 0;
+  color: var(--mcolor);
+}
+.about-header .cont .link .i {
+  transform: rotate(-45deg);
+  color: white;
+  transition: 0.4s;
+  margin: 4px 6px 0 6px;
+}
+.about-header .cont .link a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.about-header .cont .link a:hover {
+  color: var(--mcolor);
+}
+.about-header .cont .link a:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0);
+}
+
+.about-header .cont .img1 {
+  /* width: 80px; */
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  animation: updown 6s linear infinite;
+}
+.about-header .cont .img1 img {
+  width: 100px;
+}
+.about-header .cont .img2 {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+.about-header .cont .img2 img {
+  width: 100px;
+}
+@keyframes updown {
+  50% {
+    transform: translateY(100%);
+  }
+}
+

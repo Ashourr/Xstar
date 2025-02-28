@@ -1,0 +1,57 @@
+.team {
+  padding: 100px 0;
+  background-color: #151515;
+  color: white;
+  /* background-image: url("../../Imges/asset 30.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team.en{
+  direction: rtl;
+}
+.team .itme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #1b1b1b;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+.team .itme img {
+  /* width: 50px; */
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.team .itme h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.team .itme p {
+  color: #bbbbbb;
+  margin-bottom: 0;
+}
+.team .itme span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #454750;
+  margin: 10px 0;
+}
+.team .itme .icons {
+  display: flex;
+  gap: 10px;
+  color: #454750;
+}
+.team .itme .icons .i{
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.team .itme .icons .i:hover{
+  color: var(--mcolor);
+}

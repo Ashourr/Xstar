@@ -1,0 +1,163 @@
+.plansHeader {
+  padding: 200px 0 100px;
+  background-image: url("../../Imges/contactheader.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.plansHeader .cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.plansHeader .cont.en {
+  direction: rtl;
+}
+.plansHeader .cont h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.plansHeader .cont .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 100px;
+  /* gap: 7px; */
+}
+.plansHeader .cont .link h6 {
+  margin: 0;
+  color: var(--mcolor);
+}
+.plansHeader .cont .link .i {
+  transform: rotate(-45deg);
+  color: white;
+  transition: 0.4s;
+  margin: 4px 6px 0 6px;
+}
+.plansHeader .cont .link a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.plansHeader .cont .link a:hover {
+  color: var(--mcolor);
+}
+.plansHeader .cont .link a:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0);
+}
+.plansHeader .cont .img1 {
+  /* width: 80px; */
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  animation: updown 6s linear infinite;
+}
+.plansHeader .cont .img1 img {
+  width: 100px;
+}
+.plansHeader .cont .img2 {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+.plansHeader .cont .img2 img {
+  width: 100px;
+}
+@keyframes updown {
+  50% {
+    transform: translateY(100%);
+  }
+}
+.plans {
+  background-color: #1b1b1b;
+  padding: 100px 0;
+  color: white;
+}
+.plans .section-title p {
+  border: 1px solid #454750;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 100px;
+  color: var(--mcolor);
+}
+.plans .section-title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.plans .section-title h2 span {
+  font-weight: 400;
+  font-style: italic;
+}
+.plans .itme {
+  border: 1px solid #454750;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #222222;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+.plans .itme:hover {
+  border: 1px solid var(--mcolor);
+}
+.plans .itme h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.plans .itme p {
+  font-size: 14px;
+  margin: 15px 0;
+  color: #bebebe;
+}
+.plans .itme .list {
+  margin: 20px 0;
+}
+.plans .itme .list-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+.plans .itme .list-item .i {
+  color: var(--mcolor);
+  padding: 2px;
+  border: 1px solid var(--mcolor);
+  border-radius: 50%;
+  font-size: 15px;
+}
+.plans .itme .list-item h6 {
+  margin: 0;
+}
+.plans .itme a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: white;
+  transition: 0.4s;
+}
+.plans .itme a .i{
+  transform: rotate(-45deg);
+  color: white;
+  transition: 0.4s;
+}
+.plans .itme a:hover{
+  color: var(--mcolor);
+}
+.plans .itme a:hover .i {
+  transform: rotate(0deg);
+  color: var(--mcolor);
+}

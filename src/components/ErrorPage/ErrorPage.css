@@ -1,0 +1,117 @@
+.errorPageHeader {
+  padding: 200px 0 100px;
+  background-image: url("../../Imges/contactheader.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.errorPageHeader .cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.errorPageHeader .cont.en {
+  direction: rtl;
+}
+.errorPageHeader .cont h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.errorPageHeader .cont .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 100px;
+  /* gap: 7px; */
+}
+.errorPageHeader .cont .link h6 {
+  margin: 0;
+  color: var(--mcolor);
+}
+.errorPageHeader .cont .link .i {
+  transform: rotate(-45deg);
+  color: white;
+  transition: 0.4s;
+  margin: 4px 6px 0 6px;
+}
+.errorPageHeader .cont .link a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.errorPageHeader .cont .link a:hover {
+  color: var(--mcolor);
+}
+.errorPageHeader .cont .link a:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0);
+}
+
+.errorPageHeader .cont .img1 {
+  /* width: 80px; */
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  animation: updown 6s linear infinite;
+}
+.errorPageHeader .cont .img1 img {
+  width: 100px;
+}
+.errorPageHeader .cont .img2 {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+.errorPageHeader .cont .img2 img {
+  width: 100px;
+}
+@keyframes updown {
+  50% {
+    transform: translateY(100%);
+  }
+}
+
+.errorPage {
+  padding: 100px 0;
+  background-color: #1b1b1b;
+  color: white;
+}
+.errorPage h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.errorPage h2 span{
+  font-size: 16px;
+  color: var(--mcolor);
+}
+.errorPage a {
+  background-color: var(--mcolor);
+  color: black;
+  border: 1px solid var(--mcolor);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.errorPage a:hover{
+  background-color: transparent;
+  color: var(--mcolor);
+}
+@media (max-width: 400px) {
+  .errorPage h2 {
+    font-size: 25px;
+  }
+  .errorPage p{
+    font-size: 15px;
+  }
+}

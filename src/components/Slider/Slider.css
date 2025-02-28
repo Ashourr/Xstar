@@ -1,0 +1,44 @@
+.slider {
+  background-color: #161616;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  z-index: 9;
+}
+
+.slider .scrolling-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: 15px;
+}
+
+.slider .scrolling-wrap .comm {
+  display: flex;
+  align-items: center;
+  animation: scroll 60s linear infinite;
+  gap: 20px;
+  cursor: pointer;
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(0)
+  }
+
+  to {
+      transform: translateX(-100%)
+  }
+}
+.slider .scrolling-wrap .comm .cmn-textslide {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.slider .scrolling-wrap .comm h3{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.scrolling-wrap:hover .comm {
+  animation-play-state: paused
+}

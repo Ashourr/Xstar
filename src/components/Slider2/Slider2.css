@@ -1,0 +1,47 @@
+.slider2 {
+  background-color: #161616;
+  padding: 20px 0;
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+.slider2 .scrolling-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: 20px;
+}
+
+.slider2 .scrolling-wrap .comm {
+  display: flex;
+  align-items: center;
+  animation: scroll 60s linear infinite;
+  gap: 20px;
+  cursor: pointer;
+}
+.slider2 .scrolling-wrap .comm .cmn-textslide {
+  font-weight: 700;
+  line-height: 85px;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 65px;
+}
+.slider2 .scrolling-wrap .comm .cmn-textslide  h3{
+  font-weight: 700;
+  line-height: 85px;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 65px;
+}
+.slider2 .scrolling-wrap .comm .text-custom-storke {
+  -webkit-text-stroke: 1px #fff7f7;
+  -webkit-text-fill-color: transparent;
+}
+.slider2 .scrolling-wrap .comm .text-custom-storke h3{
+  -webkit-text-stroke: 1px #fff7f7;
+  -webkit-text-fill-color: transparent;
+  
+}
+.scrolling-wrap:hover .comm {
+  animation-play-state: paused
+}

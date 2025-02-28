@@ -1,0 +1,110 @@
+.heder {
+  background-color: #0f0e0e;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Imges/New\ folder/asset\ 33.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+  position: relative;
+  z-index: 0;
+}
+.heder.en{
+  direction: rtl;
+}
+.heder h2 {
+  font-size: 85px;
+  font-weight: 300;
+  font-style: italic;
+}
+.heder h2 span {
+  font-weight: 600;
+  margin: 10px;
+  font-style: normal;
+}
+.heder p.ar{
+  font-size: 20px;
+}
+.heder .imgen {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 500px;
+  z-index: -1;
+}
+.heder .imgar{
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  /* left: 0 ; */
+  bottom: 50px;
+  width: 500px;
+}
+.heder p {
+  max-width: 466px;
+  color: #ececec;
+  margin: 25px 0;
+}
+.heder a {
+  color: var(--mcolor);
+  text-decoration: none;
+  font-size: 17px;
+}
+.heder a.ar{
+  font-size: 19px;
+}
+.heder a .heder-icon {
+  margin: 0 5px ;
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+.heder a:hover .heder-icon {
+  transform: rotate(0deg);
+}
+.heder a span {
+  display: block;
+  height: 2px;
+  width: 120px;
+  background: var(--mcolor);
+  margin: 2px 0;
+}
+
+.heder .links {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+  display: flex;
+}
+.heder .links a {
+  color: #e6e6e6;
+  transition: 0.4s;
+}
+.heder .links a.ar{
+  font-size: 20px;
+}
+.heder .links a:hover {
+  color: var(--mcolor);
+}
+
+@media (max-width: 767px) {
+  .heder h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 420px) {
+  .heder h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 350px) {
+  .heder h2 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,134 @@
+.artcile {
+  padding: 100px 0;
+  background-color: #151515;
+  color: white;
+  /* background-image: url("../../Imges/asset 30.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  /* z-index: 99; */
+}
+.artcile.en {
+  direction: rtl;
+}
+.artcile .content h6 {
+  width: fit-content;
+  border: 1px solid #454750;
+  padding: 7px 15px;
+  border-radius: 38px;
+  color: var(--mcolor);
+  font-size: 15px;
+}
+.artcile .content .title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 35px 0;
+}
+.artcile .content .title h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-style: italic;
+}
+.artcile .content .title h2 .span1 {
+  font-weight: 700;
+  font-style: normal;
+}
+.artcile .content .title h2 .span2 {
+  font-weight: 700;
+}
+.artcile .content .title a {
+  border: 1px solid #454750;
+  text-decoration: none;
+  color: white;
+  /* float: 10px 20px; */
+  display: block;
+  padding: 10px 20px;
+  border-radius: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+.artcile .content .title .i {
+  transform: rotate(-45deg);
+  transition: 0.2s;
+  color: white;
+}
+.artcile .content .title a:hover {
+  color: var(--mcolor);
+  border: 1px solid var(--mcolor);
+}
+.artcile .content .title a:hover .i {
+  transform: rotate(0deg);
+  color: var(--mcolor);
+}
+
+.artcile .itme {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.artcile .itme .img {
+  overflow: hidden;
+  width: 100%;
+}
+.artcile .itme .img img {
+  transition: 0.4s;
+  width: 100%;
+}
+.artcile .itme .text {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+}
+.artcile .itme .text a {
+  margin: 10px 0;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid #454750;
+  text-decoration: none;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+}
+.artcile .itme .text a .i {
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+.artcile .itme .text p {
+  margin: 0;
+  color: #ababab;
+  font-size: 15px;
+}
+.artcile .itme .title {
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+}
+.artcile .itme:hover .title {
+  margin: 0 10px;
+  color: var(--mcolor);
+  font-size: 18px;
+}
+.artcile .itme:hover img {
+  transform: scale(1.1);
+}
+.artcile .itme:hover .link:hover {
+  border: 1px solid var(--mcolor);
+  color: var(--mcolor);
+}
+.artcile .itme:hover .link:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0deg);
+}

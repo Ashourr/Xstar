@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.video {
+  position: relative;
+}
+.video .video-aitm {
+  width: 100%;
+  background-color: #1b1b1b ;
+  height: 70vh;
+  overflow: hidden;
+}
+@media (max-width: 815px) {
+  .video .video-aitm {
+    width: 100%;
+    /* background-color: #222; */
+    height: 100%;
+    overflow: hidden;
+  }
+}
+.video .video-aitm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 75%);
+}
+.video .video-aitm video {
+  /* min-width: 100%; */
+  object-fit: cover;
+  position: relative;
+}
+.video .cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.video .cont p {
+  color: #f5b754;
+  font-size: 10px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.video .cont h4 span {
+  color: #f5b754;
+}
+.video .cont div {
+  font-style: normal;
+  transition: 0.3s;
+}
+.video .cont div:hover .i {
+  color: var(--mcolor);
+}
+
+.video .video {
+  width: fit-content;
+  position: relative;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video img {
+  animation: textani 14s linear infinite;
+  width: 150px;
+}
+.video .i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  cursor: pointer;
+}
+@keyframes textani {
+  to {
+    transform: rotate(390deg);
+  }
+}

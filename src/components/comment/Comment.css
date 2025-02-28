@@ -1,0 +1,123 @@
+.comment {
+  background-color: #1b1b1b;
+  padding: 100px 0;
+  color: white;
+}
+.comment.en{
+  direction: rtl;
+}
+.comment .img {
+  position: relative;
+}
+.comment img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.comment .img2 {
+  position: absolute;
+  top: 30px;
+  width: 68%;
+  right: 40px;
+}
+.comment .slider-comment {
+  margin: 0 10px;
+}
+
+.comment .itme .starsandimg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.comment .itme .starsandimg .stars {
+  display: flex;
+  gap: 5px;
+  color: var(--mcolor);
+  font-size: 20px;
+}
+.comment .itme p {
+  color: #bebebe;
+  font-size: 20px;
+  line-height: 32px;
+}
+.comment .itme .img4 {
+  width: 50px;
+}
+.comment .itme .into {
+  display: flex;
+  margin: 15px 0;
+  gap: 15px;
+}
+.comment .itme .into h6 {
+  color: var(--mcolor);
+}
+.comment .slick-dots {
+  display: none !important;
+}
+.comment .slick-arrow.slick-next {
+  position: absolute;
+  /* top: 493px; */
+  top: 85%;
+  right: 25px;
+  z-index: 200;
+}
+.comment .slick-next::before {
+  content: "→";
+  opacity: 1;
+  font-size: 28px;
+  font-family: monospace;
+  background: transparent;
+  border: 1px solid #44464f;
+  color: #44464f;
+  border-radius: 50%;
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment .slick-arrow.slick-prev {
+  position: absolute;
+  /* top: 493px; */
+  top: 85%;
+  left: 85%;
+  z-index: 200;
+  /* right: 20px ; */
+}
+@media (max-width:1200px) {
+  .comment .slick-arrow.slick-prev {
+    left: 80%;
+  }
+}
+@media (max-width:991px) {
+  .comment .slick-arrow.slick-prev {
+    left: 70%;
+  }
+}
+@media (max-width:767px) {
+  .comment .slick-arrow.slick-prev {
+    left: 80%;
+  }
+}
+@media (max-width:500px) {
+  .comment .slick-arrow.slick-prev {
+    left: 70%;
+  }
+}
+.comment .slick-prev::before {
+  content: "←";
+  opacity: 1;
+  font-size: 28px;
+  font-family: monospace;
+  background: transparent;
+  border: 1px solid #44464f;
+  color: #44464f;
+  border-radius: 50%;
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

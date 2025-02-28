@@ -1,0 +1,77 @@
+.modli {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000a3;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999999999999999;
+}
+.modli a {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+.modli img {
+  background-color: #222;
+}
+.modli iframe {
+  width: 40% ;
+  height: 300px;
+}
+@media (max-width: 1250px) {
+  .modli iframe {
+    width: 60%;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .modli iframe {
+    width: 90%;
+    height: 250px;
+  }
+}
+
+.aboutheder {
+  /* background-image: url(../../imges/asset\ 41.jpeg); */
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 58px);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.aboutheder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100vh - 58px);
+  background-color: #0000008f;
+}
+.aboutheder * {
+  z-index: 1;
+}
+.aboutheder p {
+  font-size: 10px;
+  color: #f5b754;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+.aboutheder h3 {
+  font-size: 35px;
+  color: white;
+}
+.aboutheder h3 span {
+  color: #f5b754;
+}

@@ -1,0 +1,224 @@
+.services-header {
+  padding: 200px 0 100px;
+  background-image: url("../../Imges/contactheader.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.services-header .cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.services-header .cont.en {
+  direction: rtl;
+}
+.services-header .cont h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.services-header .cont .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 100px;
+  /* gap: 7px; */
+}
+.services-header .cont .link h6 {
+  margin: 0;
+  color: var(--mcolor);
+}
+.services-header .cont .link .i {
+  transform: rotate(-45deg);
+  color: white;
+  transition: 0.4s;
+  margin: 4px 6px 0 6px;
+}
+.services-header .cont .link a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.services-header .cont .link a:hover {
+  color: var(--mcolor);
+}
+.services-header .cont .link a:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0);
+}
+
+.services-header .cont .img1 {
+  /* width: 80px; */
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  animation: updown 6s linear infinite;
+}
+.services-header .cont .img1 img {
+  width: 100px;
+}
+.services-header .cont .img2 {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+.services-header .cont .img2 img {
+  width: 100px;
+}
+@keyframes updown {
+  50% {
+    transform: translateY(100%);
+  }
+}
+
+
+.services {
+  padding: 100px 0;
+  background-color: #1b1b1b;
+  color: white;
+  background-image: url("../../Imges/asset 30.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+}
+.services.en{
+  direction: rtl;
+}
+.services .content h6 {
+  width: fit-content;
+  border: 1px solid #454750;
+  padding: 7px 15px;
+  border-radius: 38px;
+  color: var(--mcolor);
+  font-size: 15px;
+}
+.services .content .title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 35px 0;
+}
+.services .content .title h2 {
+  margin-bottom:20px ;
+  font-size: 50px;
+  font-style: italic;
+}
+.services .content .title h2 .span1 {
+  font-weight: 700;
+  font-style: normal;
+}
+.services .content .title h2 .span2 {
+  font-weight: 700;
+}
+.services .content .title a {
+  border: 1px solid #454750;
+  text-decoration: none;
+  color: white;
+  /* float: 10px 20px; */
+  display: block;
+  padding: 10px 20px;
+  border-radius: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+.services .content .title .i {
+  transform: rotate(-45deg);
+  transition: 0.2s;
+  color: white;
+}
+.services .content .title a:hover {
+  color: var(--mcolor);
+  border: 1px solid var(--mcolor);
+}
+.services .content .title a:hover .i {
+  transform: rotate(0deg);
+  color: var(--mcolor);
+}
+.services .itme {
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.services .itme .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .itme .logo img {
+  width: 50px;
+}
+.services .itme .logo p {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: var(--jakarta);
+  color: var(--white);
+  opacity: 15%;
+  margin: 0;
+}
+.services .itme h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.services .itme .pra {
+  color: #bebebe;
+  font-size: 14px;
+}
+.services .itme a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.services .itme .i {
+  transform: rotate(-45deg);
+  transition: 0.4s;
+  color: white;
+}
+
+.services .itme:hover a{
+  color: var(--mcolor);
+}
+.services .itme:hover .i{
+  transform: rotate(0deg);
+  color: var(--mcolor);
+}
+.services .itme:hover h3{
+  color: var(--mcolor);
+}
+@media (max-width: 520px) {
+  .services .content .title h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .services .content .title h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .services .content .title h2 {
+    font-size: 25px;
+  }
+}

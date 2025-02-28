@@ -1,0 +1,215 @@
+.blog-header {
+  padding: 200px 0 100px;
+  background-image: url("../../Imges/contactheader.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.blog-header .cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-header .cont.en {
+  direction: rtl;
+}
+.blog-header .cont h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.blog-header .cont .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 100px;
+  /* gap: 7px; */
+}
+.blog-header .cont .link h6 {
+  margin: 0;
+  color: var(--mcolor);
+}
+.blog-header .cont .link .i {
+  transform: rotate(-45deg);
+  color: white;
+  transition: 0.4s;
+  margin: 4px 6px 0 6px;
+}
+.blog-header .cont .link a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.blog-header .cont .link a:hover {
+  color: var(--mcolor);
+}
+.blog-header .cont .link a:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0);
+}
+
+.blog-header .cont .img1 {
+  /* width: 80px; */
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  animation: updown 6s linear infinite;
+}
+.blog-header .cont .img1 img {
+  width: 100px;
+}
+.blog-header .cont .img2 {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+.blog-header .cont .img2 img {
+  width: 100px;
+}
+@keyframes updown {
+  50% {
+    transform: translateY(100%);
+  }
+}
+
+.blog {
+  padding: 100px 0;
+  background-color: #151515;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog.en {
+  direction: rtl;
+}
+.blog .content h6 {
+  width: fit-content;
+  border: 1px solid #454750;
+  padding: 7px 15px;
+  border-radius: 38px;
+  color: var(--mcolor);
+  font-size: 15px;
+}
+.blog .content .title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 35px 0;
+}
+.blog .content .title h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-style: italic;
+}
+.blog .content .title h2 .span1 {
+  font-weight: 700;
+  font-style: normal;
+}
+.blog .content .title h2 .span2 {
+  font-weight: 700;
+}
+.blog .content .title a {
+  border: 1px solid #454750;
+  text-decoration: none;
+  color: white;
+  /* float: 10px 20px; */
+  display: block;
+  padding: 10px 20px;
+  border-radius: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+.blog .content .title .i {
+  transform: rotate(-45deg);
+  transition: 0.2s;
+  color: white;
+}
+.blog .content .title a:hover {
+  color: var(--mcolor);
+  border: 1px solid var(--mcolor);
+}
+.blog .content .title a:hover .i {
+  transform: rotate(0deg);
+  color: var(--mcolor);
+}
+
+.blog .itme {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.blog .itme .img {
+  overflow: hidden;
+  width: 100%;
+}
+.blog .itme .img img {
+  transition: 0.4s;
+  width: 100%;
+}
+.blog .itme .text {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+}
+.blog .itme .text a {
+  margin: 10px 0;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid #454750;
+  text-decoration: none;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+}
+.blog .itme .text a .i {
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+.blog .itme .text p {
+  margin: 0;
+  color: #ababab;
+  font-size: 15px;
+}
+.blog .itme .title {
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+}
+.blog .itme:hover .title {
+  margin: 0 10px;
+  color: var(--mcolor);
+  font-size: 18px;
+}
+.blog .itme:hover img {
+  transform: scale(1.1);
+}
+.blog .itme:hover .link:hover {
+  border: 1px solid var(--mcolor);
+  color: var(--mcolor);
+}
+.blog .itme:hover .link:hover .i {
+  color: var(--mcolor);
+  transform: rotate(0deg);
+}
