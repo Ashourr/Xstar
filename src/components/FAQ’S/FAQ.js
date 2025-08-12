@@ -44,8 +44,6 @@ function FAQ() {
                   </div>
                 </div>
               </div>
-            {/* </div> */}
-            {/* <div classNameName="col-12 col-lg-6"> */}
                <div className="accordion-item">
               <h2 className="accordion-header" id="headingTwo">
                 <button
@@ -78,8 +76,6 @@ function FAQ() {
                 </div>
               </div>
             </div>
-            {/* </div> */}
-           {/* <div classNameName="col-12 col-lg-6"> */}
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingThree">
                 <button
@@ -113,22 +109,22 @@ function FAQ() {
               </div>
             </div>
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
+              <h2 className="accordion-header" id="heading4">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#collapse4"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapse4"
                 >
                   Accordion Item #4
                 </button>
               </h2>
               <div
-                id="collapseThree"
+                id="collapse4"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
+                aria-labelledby="heading4"
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
@@ -145,22 +141,22 @@ function FAQ() {
               </div>
             </div>
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
+              <h2 className="accordion-header" id="heading5">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#collapse5"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapse5"
                 >
                   Accordion Item #5
                 </button>
               </h2>
               <div
-                id="collapseThree"
+                id="collapse5"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
+                aria-labelledby="heading5"
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
@@ -177,22 +173,22 @@ function FAQ() {
               </div>
             </div>
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
+              <h2 className="accordion-header" id="heading6">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#collapse6"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapse6"
                 >
                   Accordion Item #6
                 </button>
               </h2>
               <div
-                id="collapseThree"
+                id="collapse6"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
+                aria-labelledby="heading6"
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">

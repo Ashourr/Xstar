@@ -30,15 +30,11 @@ function HomePage() {
   useEffect(() => {
     setlang(localStorage.getItem("lang"));
     window.scroll(0, 0);
-    // setTimeout(() => {
-    //   setloading(false);
-    // }, 1000);
   }, []);
   return (
     <>
       <Navbar lang={langs} langs={lang} />
       <LangAndPhone lang={langs} langs={lang} />
-      {/* <Heder langs={lang/} /> */}
       <Header2 langs={lang} />
       <Slider langs={lang} />
       <AboutHome langs={lang} />

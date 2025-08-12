@@ -148,23 +148,16 @@ function Footer(props) {
       </div>
       <div className="footer-bottom">
         <div className="container">
-          <div className="copy">
-            <div className="pra">
-              <p>
-                {" "}
-                &copy;
-                {props.langs === "ar"
-                  ? " All Copyright 2024 by"
-                  : " جميع الحقوق محفوظة ل"}
-              </p>
-              <Link>Xstar</Link>
-            </div>
-            <div>
-              <Link>
-                {props.langs === "ar"
-                  ? "Terms & Conditions Privacy Policy"
-                  : "الشروط والأحكام سياسة الخصوصية"}
-              </Link>
+          <div className="copy-right">
+            <p>Copyright 2025 &copy; All Right Reserved</p>
+            <div className="dev">
+              <p>front end : </p>
+              <a
+                href="https://www.facebook.com/profile.php?id=100005869890293"
+                target="_blank"
+              >
+                Ashour
+              </a>
             </div>
           </div>
         </div>
