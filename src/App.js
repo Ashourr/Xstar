@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./Pages/HomePage";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactPage from "./Pages/ContactPage";
 import ServicesPage from "./Pages/ServicesPage";

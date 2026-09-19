@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { faAnglesRight, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import imgFooter from "../../Imges/let-arrow.png";
 function Footer(props) {
   return (
     <footer className={`footer ${props.langs}`}>
@@ -155,6 +154,7 @@ function Footer(props) {
               <a
                 href="https://www.facebook.com/profile.php?id=100005869890293"
                 target="_blank"
+                rel="noreferrer"
               >
                 Ashour
               </a>

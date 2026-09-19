@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar/Navbar";
 import LangAndPhone from "../components/navbar/LangAndPhone";
-import Heder from "../components/heder/Heder";
 import Footer from "../components/footer/Footer";
 import Header2 from "../components/header2/Header2";
 import AboutHome from "../components/aboutHome/AboutHome";
@@ -16,21 +15,23 @@ import Comment from "../components/comment/Comment";
 
 function HomePage() {
   let [lang, setlang] = useState("en");
-  // let [loading, setloading] = useState(true);
 
   function langs() {
-    if (lang === "en") {
-      setlang("ar");
-      localStorage.setItem("lang", "ar");
-    } else {
-      setlang("en");
-      localStorage.setItem("lang", "en");
-    }
+    const newLang = lang === "en" ? "ar" : "en";
+    setlang(newLang);
+    localStorage.setItem("lang", newLang);
   }
+
   useEffect(() => {
-    setlang(localStorage.getItem("lang"));
+    const savedLang = localStorage.getItem("lang");
+    if (savedLang) {
+      setlang(savedLang);
+    } else {
+      localStorage.setItem("lang", "ar"); // أول مرة يفتح المشروع، يحفظ الافتراضي
+    }
     window.scroll(0, 0);
   }, []);
+
   return (
     <>
       <Navbar lang={langs} langs={lang} />
